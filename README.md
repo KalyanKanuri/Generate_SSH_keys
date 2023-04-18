@@ -17,9 +17,13 @@ To generate an SSH key, you can use the `ssh-keygen` command in a terminal windo
 
 ## code
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/you/.ssh/id_rsa): 
+
+Enter file in which to save the key (/Users/you/.ssh/id_rsa):
+
 Enter passphrase (empty for no passphrase):
+
 Enter same passphrase again:
 
 By pressing enter twice, you are creating an SSH key pair without a password attached to it.
@@ -51,12 +55,17 @@ To do this, simply clone an existing repository or create a new one:
 ### code
 
 $ git clone git@github.com:yourusername/your-repo.git
+
 Cloning into 'your-repo'...
+
 remote: Enumerating objects: 3, done.
+
 remote: Counting objects: 100% (3/3), done.
+
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+
 Receiving objects: 100% (3/3), done.
-```
+
 
 When you clone a repository via SSH, Git automatically uses your private key to authenticate with GitHub. You should not be prompted for a username or password.
 
