@@ -15,8 +15,10 @@ Before you begin, you'll need:
 
 To generate an SSH key, you can use the `ssh-keygen` command in a terminal window. To create an ssh key without a password, simply press enter when prompted for a passphrase:
 
-## code
+```bash
+# key generation
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
 Generating public/private rsa key pair.
 
@@ -52,10 +54,11 @@ Now that you have added your public key to your GitHub account, you can use your
 
 To do this, simply clone an existing repository or create a new one:
 
-### code
 
+```bash
+#cloning repo
 $ git clone git@github.com:yourusername/your-repo.git
-
+````
 Cloning into 'your-repo'...
 
 remote: Enumerating objects: 3, done.
